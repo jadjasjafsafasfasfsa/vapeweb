@@ -156,7 +156,7 @@ a:hover{
 @media (max-width: 600px) {
     .perfil{
         max-width: 900px;
-        max-height: 450px;
+        max-height: 550px;
         width: 90%;
         height: 90%;
         position: absolute;
@@ -183,6 +183,7 @@ a:hover{
         width: 40px;
         height: 40px;
         margin-top: 130px;
+        display: none;
     } 
 
     h3{
