@@ -59,10 +59,6 @@ img{
     transition: 0.3s;
 }
 
-.bxs-moon:hover{
-    transform: rotate(360deg); 
-}
-
 .nitro{
     width: 60px;
     height: 60px;
