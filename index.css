@@ -91,8 +91,7 @@ p{
 }
 
 a{
-    font-size: 50px;
-    color: #ddd;
+    color: #000080;
     margin-left: 50px;
     transition: 0.5s;
 }
