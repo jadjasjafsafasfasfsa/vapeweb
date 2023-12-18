@@ -91,14 +91,9 @@ p{
 }
 
 a{
-    color: #000080;
+    color: #0073cf;
     margin-left: 50px;
     transition: 0.5s;
-}
-
-a:hover{
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 20px white);
 }
 
 .btn{
