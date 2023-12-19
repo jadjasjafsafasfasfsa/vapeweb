@@ -1,195 +1,196 @@
-*{
-    font-family: sans-serif;
-    font-weight: normal;
-    text-decoration: none;
+body {
     margin: 0;
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #05070b;
+    user-select: none;
 }
 
-
-
-html{
-    height: 100%;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 740px;
 }
 
-body{
-    background-color: #2f3136;
-
+.margines-arriba-abajo {
+    height: 50px;
+    width: 700px;
 }
 
-
-.perfil{
-    max-width: 950px;
-    max-height: 650px;
-    width: 90%;
-    height: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #18191c;
-    border-radius: 10px;
-    box-shadow: 0 0 30px #000000aa;
-    transition: 1s;
-}
-
-.perfil:hover{
-    filter: drop-shadow(0 0 20px rgb(212, 166, 66));
-}
-
-
-img{
-    border-radius: 300px;
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    display: block;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-.bxs-moon{
-    color: rgb(212, 166, 66);
-    font-size: 60px;
-    transform: scaleX(-1);
-    position: absolute;
-    margin: 250px ;
-    background-color: #18191c;
-    border-radius: 300px;
-    transition: 0.3s;
-}
-
-.nitro{
-    width: 60px;
-    height: 60px;
-    float: right;
-    margin-top: 250px;
-    margin-left: -20px;
-    margin-right: 35px;
-} 
-
-h3{
-    margin-top: 30px;
-    margin-left: 30px;
-    color: #fff;
-    font-size: 40px;
-    font-family: 'Radio Canada', sans-serif;
-
-}
-
-p{
-    margin-top: 20px;
-    margin-left: 30px;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Radio Canada', sans-serif;
-
-}
-
-a{
-    color: #0073cf;
-    margin-left: 10px;
+.rectangulo-arriba {
+    width: 500px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.btn{
-    margin: 30px;
+
+.texto-rectangulo-arriba {
+    width: 650px;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 900;
+    font-family: system-ui, sans-serif;
+    margin-left: 25px;
+    margin-top: 80px;
+    color: #fff;
+}
+
+.nombre {
     font-size: 40px;
-    float: right;
-    background-color: #2f3136;
-    padding: 6px;
-    border-radius: 10px;
-    margin-top: -10px;
 }
 
-.btn:hover{
-    transform: scale(1.05);
-    filter: none;
-}
-
-.back{
-    opacity: 0.8;
-    font-size: 80px;
-    position: absolute;
-    right: 0;
-    margin-right: 15px;
-    border-radius: 300px;
-}
-
-.back:hover{
-    opacity: 1;
-    transform: scale(1.10);
-    filter: none;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #fff;
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
+.edad {
+    font-size: 17px;
+    font-weight: 400;
 }
 
 
-@media (max-width: 600px) {
-    .perfil{
-        max-width: 900px;
-        max-height: 550px;
-        width: 90%;
-        height: 90%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background-color: #18191c;
-        border-radius: 10px;
-        box-shadow: 0 0 30px #000000aa;
-        transition: 1s;
+.rectangulo {
+    width: 500px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rectangulo-con-efectos {
+    width: 500px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rectangulo-con-efectos:hover {
+    filter: drop-shadow(0 0 10px rgb(212, 166, 66));
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cuadrado-con-efectos {
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cuadrado-con-efectos:hover {
+    filter: drop-shadow(0 0 10px rgb(212, 166, 66));
+}
+
+.rectangulo-info {
+    width: 720px;
+    height: 120px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.texto-rectangulo {
+    width: 650px;
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: system-ui, sans-serif;
+}
+
+.imagen-centrada-1 {
+    height: 50px;
+    width: auto;
+}
+
+.imagen-centrada-2 {
+    height: 200px;
+    width: 500px;
+}
+
+.imagen-centrada-3 {
+    height: 200px;
+    width: 500px;
+}
+.imagen-centrada-4 {
+    width: 220px;
+}
+
+.minitexto-centrado {
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+}
+
+.minitexto-numero {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+@media screen and (max-width: 768px) {
+    .rectangulo-arriba,
+    .cuadrado,
+    .cuadrado-con-efectos {
+        margin-left: 18px;
+        width: 350px;
     }
 
-    img{
-        height: 150px;
-        width: 150px;
+
+    .rectangulo-info {
+        margin-left: 18px;
+        width: 350px;
+        height: 220px;
     }
 
-    .bxs-moon{
-        font-size: 40px;
-        margin: 130px ;
+    .texto-rectangulo-arriba {
+        margin-left: 25%;
+        margin-top: 2%;
     }
-    
-    .nitro{
-        width: 40px;
-        height: 40px;
-        margin-top: 130px;
+
+    .texto-rectangulo {
+        width: 300px;
+    }
+
+    .rectangulo,
+    .rectangulo-con-efectos {
         display: none;
-    } 
-
-    h3{
-        margin-top: 30px;
-        margin-left: 20px;
-        color: #fff;
-        font-size: 40px;
     }
+}
 
-    .btn{
-        font-size: 40px;
-        background-color: #2f3136;
-        padding: 6px;
-        border-radius: 10px;
-        margin-top: 0px;
+@media screen and (max-width: 768px) {
+    .container {
+       width: 380px;
     }
-
-
 }
