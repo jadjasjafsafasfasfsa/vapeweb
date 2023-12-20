@@ -20,6 +20,7 @@ function actualizarHora() {
 
     const elementoCuadado = document.getElementById('hora-cuadrado');
 
+    if (obtenerHoraActual2() < 5) elementoCuadado.style.backgroundColor = `#0c4a6e`
     if (obtenerHoraActual2() >= 5) elementoCuadado.style.backgroundColor = `#136c9f`
     if (obtenerHoraActual2() >= 10) elementoCuadado.style.backgroundColor = `#20aeff`
     if (obtenerHoraActual2() >= 20) elementoCuadado.style.backgroundColor = `#0c4a6e`
