@@ -163,13 +163,13 @@ body {
     .rectangulo-arriba,
     .cuadrado,
     .cuadrado-con-efectos {
-        margin-left: 18px;
+        margin-left: 15px;
         width: 350px;
     }
 
 
     .rectangulo-info {
-        margin-left: 18px;
+        margin-left: 15px;
         width: 350px;
         height: 220px;
     }
