@@ -53,4 +53,3 @@ function actualizarDiasRestantes() {
 }
 
 actualizarDiasRestantes();
-
