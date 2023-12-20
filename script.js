@@ -54,3 +54,19 @@ function actualizarDiasRestantes() {
 }
 
 actualizarDiasRestantes();
+
+
+// ACTUALIZAR IMAGENES
+
+function actualizarImagenes() {
+    const discord_img = document.getElementById('discord');
+    discord_img.src = `https://lanyard-profile-readme.vercel.app/api/979475892969566289?animated=false&hideDiscrim=true&idleMessage=No%20activity%20recently.&timestamp=${Date.now()}`
+
+
+    const spotify_img = document.getElementById('spotify');
+    spotify_img.src = `https://spotify-recently-played-readme.vercel.app/api?user=316g6lm3zznouehsvsghxis5rr4m&width=830&timestamp=${Date.now()}`
+}
+
+
+
+setInterval(actualizarImagenes, 1000);
