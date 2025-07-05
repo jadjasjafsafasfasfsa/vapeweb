@@ -39,7 +39,7 @@ setInterval(actualizarHora, 1000);
 // CALCULAR DIAS RESTANTES
 
 function calcularDiasRestantes() {
-    const fechaObjetivo = new Date('2024-06-22');
+    const fechaObjetivo = new Date('2026-06-22');
     const fechaActual = new Date();
     const diferenciaMs = fechaObjetivo - fechaActual;
     const diasRestantes = Math.ceil(diferenciaMs / (1000 * 60 * 60 * 24));
@@ -70,3 +70,5 @@ function actualizarImagenes() {
 
 
 setInterval(actualizarImagenes, 1000);
+
+
