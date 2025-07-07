@@ -29,11 +29,6 @@ body {
     right: 15%;
   }
 
-  .blob:nth-child(3) {
-    bottom: -300px;
-    left: 15%;
-  }
-
   @keyframes deformar {
     0% {
       border-radius: 50% 50% 40% 60% / 60% 40% 60% 40%;
