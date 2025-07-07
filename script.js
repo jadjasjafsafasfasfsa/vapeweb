@@ -72,3 +72,18 @@ function actualizarImagenes() {
 setInterval(actualizarImagenes, 1000);
 
 
+
+
+const audio = document.getElementById('audio');
+const btn = document.getElementById('toggleBtn');
+const estado = document.getElementById('estado');
+
+btn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      btn.innerHTML = '<i class="fas fa-pause"></i>';
+    } else {
+      audio.pause();
+      btn.innerHTML = '<i class="fas fa-play"></i>';
+    }
+  });
