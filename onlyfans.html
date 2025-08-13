@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>gbauu - OnlyFans</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%; overflow: hidden; background: black;
+  }
+  #player {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* para que no interfiera con el mouse */
+  }
+</style>
+</head>
+<body>
+
+<div id="player"></div>
+
+<script>
+  // Cargar la API de YouTube
+  let tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.head.appendChild(tag);
+
+  let player;
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: 'cqhVEP4TLGg',
+      playerVars: {
+        autoplay: 1,
+        controls: 0,
+        loop: 1,
+        playlist: 'cqhVEP4TLGg',
+        modestbranding: 1,
+        rel: 0,
+        showinfo: 0,
+        fs: 0,
+        iv_load_policy: 3,
+        disablekb: 1,
+        mute: 1
+      },
+      events: {
+        'onReady': (event) => {
+          event.target.playVideo();
+        }
+      }
+    });
+  }
+
+  function unlockSound() {
+    if (player) {
+      player.unMute();
+      player.playVideo();
+      window.removeEventListener('mousemove', unlockSound);
+      console.log("Sonido desbloqueado por movimiento de mouse");
+    }
+  }
+
+  window.addEventListener('mousemove', unlockSound);
+</script>
+
+</body>
+</html>
